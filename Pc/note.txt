@@ -1,0 +1,10 @@
+wmic path Win32_Processor get LoadPercentage /every:1 /format:list
+
+nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits
+
+
+diferensement --> wmic path win32_videocontroller get name
+
+nvidia-smi
+rocm-smi
+intel_gpu_top
