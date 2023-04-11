@@ -6,5 +6,5 @@ nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits
 diferensement --> wmic path win32_videocontroller get name
 
 nvidia-smi
-rocm-smi
+rocm-smi -u –showuse
 intel_gpu_top
