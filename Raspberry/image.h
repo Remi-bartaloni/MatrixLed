@@ -2,6 +2,7 @@
 #define IMAGE_H
 
 #include <iostream>
+#include <cmath>
 
 #include "led-matrix.h"
 #include "graphics.h"
@@ -23,12 +24,13 @@ class Image
     int map(int, int, int, int, int);
 
     public :
+        Image(RGBMatrix*);
         Image(RGBMatrix*, const char*);
 
         void setChemin(const char*);
         void setBruit(int);
         void setRotation(int);
-        void setFiltre(Color);
+        void setFiltre(Color, bool redressage = false);
 
         int printImage(int, int);
 
